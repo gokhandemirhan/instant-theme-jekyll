@@ -6,14 +6,14 @@ layout: default
 <section id="works"></section>
 <div class="container">
     <div class="row centered mt mb">
-        <h1>My Portfolio</h1>
+        <h1>My Works</h1>
 
         {% for post in site.categories['work'] %}
         <!--single post code-->
 
 
         <div class="col-lg-4 col-md-4 col-sm-4 gallery">
-            <a href="work.html"><img src="{{ post.image }}" class="img-responsive"></a>
+            <a href="{{ post.url }}"><img src="{{ post.image }}" class="img-responsive"></a>
         </div>
 
         {% endfor %}
