@@ -1,0 +1,23 @@
+{% include header.html %}
+
+<div id="workwrap">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-lg-offset-3">
+                <h1>{{ page.title }}</h1>
+                <h4>{{ page.date | date_to_long_string }}</h4>
+            </div>
+        </div><! --/row -->
+    </div> <!-- /container -->
+</div><! --/workwrap -->
+
+<section id="works"></section>
+<div class="container">
+    <div class="row centered mt mb">
+        <div class="col-lg-8 col-lg-offset-2">
+            <p>{{ content }}</p>
+        </div>
+    </div><! --/row -->
+</div><! --/container -->
+
+{% include footer.html %}
